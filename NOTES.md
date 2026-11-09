@@ -97,3 +97,7 @@ To view the combined environment test's mocked outputs:
 ```sh
 terraform -chdir=environments/dev test -filter=tests/dev.tftest.hcl -verbose
 ```
+To validate terraform configuration:
+```sh
+terraform -chdir=environments/dev validate
+```
